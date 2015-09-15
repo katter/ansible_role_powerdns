@@ -1,0 +1,499 @@
+#################################
+# also-notify
+#
+{% if powerdns_also_notify is defined %}also-notify={{ powerdns_also_notify }} {% else %}# also-notify={%endif%}
+
+#################################
+# any-to-tcp
+#
+{% if powerdns_any_to_tcp is defined %}any-to-tcp={{ powerdns_any_to_tcp }} {% else %}# any-to-tcp=no{%endif%}
+
+#################################
+# cache-ttl
+#
+{% if powerdns_cache_ttl is defined %}cache-ttl={{ powerdns_cache_ttl }} {% else %}# cache-ttl=20{%endif%}
+
+#################################
+# carbon-interval
+#
+{% if powerdns_carbon_interval is defined %}carbon-interval={{ powerdns_carbon_interval }} {% else %}# carbon-interval=30{%endif%}
+
+#################################
+# carbon-ourname
+#
+{% if powerdns_carbon_ourname is defined %}carbon-ourname={{ powerdns_carbon_ourname }} {% else %}# carbon-ourname={%endif%}
+
+#################################
+# carbon-server
+#
+{% if powerdns_carbon_server is defined %}carbon-server={{ powerdns_carbon_server }} {% else %}# carbon-server={%endif%}
+
+#################################
+# chroot
+#
+{% if powerdns_chroot is defined %}chroot={{ powerdns_chroot }} {% else %}# chroot={%endif%}
+
+#################################
+# config-dir
+#
+{% if powerdns_config_dir is defined %}config-dir={{ powerdns_config_dir }} {% else %}# config-dir=/usr/local/etc{%endif%}
+
+#################################
+# config-name
+#
+{% if powerdns_config_name is defined %}config-name={{ powerdns_config_name }} {% else %}# config-name={%endif%}
+
+#################################
+# control-console
+#
+{% if powerdns_control_console is defined %}control-console={{ powerdns_control_console }} {% else %}# control-console=no{%endif%}
+
+#################################
+# daemon
+#
+{% if powerdns_daemon is defined %}daemon={{ powerdns_daemon }} {% else %}# daemon=no{%endif%}
+
+#################################
+# default-ksk-algorithms
+#
+{% if powerdns_default_ksk_algorithms is defined %}default-ksk-algorithms={{ powerdns_default_ksk_algorithms }} {% else %}# default-ksk-algorithms=rsasha256{%endif%}
+
+#################################
+# default-ksk-size
+#
+{% if powerdns_default_ksk_size is defined %}default-ksk-size={{ powerdns_default_ksk_size }} {% else %}# default-ksk-size=0{%endif%}
+
+#################################
+# default-soa-mail
+#
+{% if powerdns_default_soa_mail is defined %}default-soa-mail={{ powerdns_default_soa_mail }} {% else %}# default-soa-mail={%endif%}
+
+#################################
+# default-soa-name
+#
+{% if powerdns_default_soa_name is defined %}default-soa-name={{ powerdns_default_soa_name }} {% else %}# default-soa-name=a.misconfigured.powerdns.server{%endif%}
+
+#################################
+# default-ttl
+#
+{% if powerdns_default_ttl is defined %}default-ttl={{ powerdns_default_ttl }} {% else %}# default-ttl=3600{%endif%}
+
+#################################
+# default-zsk-algorithms
+#
+{% if powerdns_default_zsk_algorithms is defined %}default-zsk-algorithms={{ powerdns_default_zsk_algorithms }} {% else %}# default-zsk-algorithms=rsasha256{%endif%}
+
+#################################
+# default-zsk-size
+#
+{% if powerdns_default_zsk_size is defined %}default-zsk-size={{ powerdns_default_zsk_size }} {% else %}# default-zsk-size=0{%endif%}
+
+#################################
+# direct-dnskey
+#
+{% if powerdns_direct_dnskey is defined %}direct-dnskey={{ powerdns_direct_dnskey }} {% else %}# direct-dnskey=no{%endif%}
+
+#################################
+# disable-axfr
+#
+{% if powerdns_disable_axfr is defined %}disable-axfr={{ powerdns_disable_axfr }} {% else %}# disable-axfr=no{%endif%}
+
+#################################
+# disable-axfr-rectify
+#
+{% if powerdns_disable_axfr_rectify is defined %}disable-axfr-rectify={{ powerdns_disable_axfr_rectify }} {% else %}# disable-axfr-rectify=no{%endif%}
+
+#################################
+# disable-tcp
+#
+{% if powerdns_disable_tcp is defined %}disable-tcp={{ powerdns_disable_tcp }} {% else %}# disable-tcp=no{%endif%}
+
+#################################
+# distributor-threads
+#
+{% if powerdns_distributor_threads is defined %}distributor-threads={{ powerdns_distributor_threads }} {% else %}# distributor-threads=3{%endif%}
+
+#################################
+# do-ipv6-additional-processing
+#
+{% if powerdns_do_ipv6_additional_processing is defined %}do-ipv6-additional-processing={{ powerdns_do_ipv6_additional_processing }} {% else %}# do-ipv6-additional-processing=yes{%endif%}
+
+#################################
+# edns-subnet-processing
+#
+{% if powerdns_edns_subnet_processing is defined %}edns-subnet-processing={{ powerdns_edns_subnet_processing }} {% else %}# edns-subnet-processing=no{%endif%}
+
+#################################
+# entropy-source
+#
+{% if powerdns_entropy_source is defined %}entropy-source={{ powerdns_entropy_source }} {% else %}# entropy-source=/dev/urandom{%endif%}
+
+#################################
+# experimental-api-key
+#
+{% if powerdns_experimental_api_key is defined %}experimental-api-key={{ powerdns_experimental_api_key }} {% else %}# experimental-api-key={%endif%}
+
+#################################
+# experimental-api-readonly
+#
+{% if powerdns_experimental_api_readonly is defined %}experimental-api-readonly={{ powerdns_experimental_api_readonly }} {% else %}# experimental-api-readonly=no{%endif%}
+
+#################################
+# experimental-dname-processing
+#
+{% if powerdns_experimental_dname_processing is defined %}experimental-dname-processing={{ powerdns_experimental_dname_processing }} {% else %}# experimental-dname-processing=no{%endif%}
+
+#################################
+# experimental-dnsupdate
+#
+{% if powerdns_experimental_dnsupdate is defined %}experimental-dnsupdate={{ powerdns_experimental_dnsupdate }} {% else %}# experimental-dnsupdate=no{%endif%}
+
+#################################
+# experimental-json-interface
+#
+{% if powerdns_experimental_json_interface is defined %}experimental-json-interface={{ powerdns_experimental_json_interface }} {% else %}# experimental-json-interface=no{%endif%}
+
+#################################
+# experimental-logfile
+#
+{% if powerdns_experimental_logfile is defined %}experimental-logfile={{ powerdns_experimental_logfile }} {% else %}# experimental-logfile=/var/log/pdns.log{%endif%}
+
+#################################
+# forward-dnsupdate
+#
+{% if powerdns_forward_dnsupdate is defined %}forward-dnsupdate={{ powerdns_forward_dnsupdate }} {% else %}# forward-dnsupdate=yes{%endif%}
+
+#################################
+# guardian
+#
+{% if powerdns_guardian is defined %}guardian={{ powerdns_guardian }} {% else %}# guardian=no{%endif%}
+
+#################################
+# include-dir
+#
+{% if powerdns_include_dir is defined %}include-dir={{ powerdns_include_dir }} {% else %}# include-dir={%endif%}
+
+#################################
+# launch
+#
+{% if powerdns_launch is defined %}launch={{ powerdns_launch }} {% else %}# launch={%endif%}
+
+#################################
+# load-modules
+#
+{% if powerdns_load_modules is defined %}load-modules={{ powerdns_load_modules }} {% else %}# load-modules={%endif%}
+
+#################################
+# local-address
+#
+{% if powerdns_local_address is defined %}local-address={{ powerdns_local_address }} {% else %}# local-address=0.0.0.0{%endif%}
+
+#################################
+# local-address-nonexist-fail
+#
+{% if powerdns_local_address_nonexist_fail is defined %}local-address-nonexist-fail={{ powerdns_local_address_nonexist_fail }} {% else %}# local-address-nonexist-fail=yes{%endif%}
+
+#################################
+# local-ipv6
+#
+{% if powerdns_local_ipv6 is defined %}local-ipv6={{ powerdns_local_ipv6 }} {% else %}# local-ipv6={%endif%}
+
+#################################
+# local-ipv6-nonexist-fail
+#
+{% if powerdns_local_ipv6_nonexist_fail is defined %}local-ipv6-nonexist-fail={{ powerdns_local_ipv6_nonexist_fail }} {% else %}# local-ipv6-nonexist-fail=yes{%endif%}
+
+#################################
+# local-port
+#
+{% if powerdns_local_port is defined %}local-port={{ powerdns_local_port }} {% else %}# local-port=53{%endif%}
+
+#################################
+# log-dns-details
+#
+{% if powerdns_log_dns_details is defined %}log-dns-details={{ powerdns_log_dns_details }} {% else %}# log-dns-details=no{%endif%}
+
+#################################
+# log-dns-queries
+#
+{% if powerdns_log_dns_queries is defined %}log-dns-queries={{ powerdns_log_dns_queries }} {% else %}# log-dns-queries=no{%endif%}
+
+#################################
+# logging-facility
+#
+{% if powerdns_logging_facility is defined %}logging-facility={{ powerdns_logging_facility }} {% else %}# logging-facility={%endif%}
+
+#################################
+# loglevel
+#
+{% if powerdns_loglevel is defined %}loglevel={{ powerdns_loglevel }} {% else %}# loglevel=4{%endif%}
+
+#################################
+# lua-prequery-script
+#
+{% if powerdns_lua_prequery_script is defined %}lua-prequery-script={{ powerdns_lua_prequery_script }} {% else %}# lua-prequery-script={%endif%}
+
+#################################
+# master
+#
+{% if powerdns_master is defined %}master={{ powerdns_master }} {% else %}# master=no{%endif%}
+
+#################################
+# max-cache-entries
+#
+{% if powerdns_max_cache_entries is defined %}max-cache-entries={{ powerdns_max_cache_entries }} {% else %}# max-cache-entries=1000000{%endif%}
+
+#################################
+# max-ent-entries
+#
+{% if powerdns_max_ent_entries is defined %}max-ent-entries={{ powerdns_max_ent_entries }} {% else %}# max-ent-entries=100000{%endif%}
+
+#################################
+# max-nsec3-iterations
+#
+{% if powerdns_max_nsec3_iterations is defined %}max-nsec3-iterations={{ powerdns_max_nsec3_iterations }} {% else %}# max-nsec3-iterations=500{%endif%}
+
+#################################
+# max-queue-length
+#
+{% if powerdns_max_queue_length is defined %}max-queue-length={{ powerdns_max_queue_length }} {% else %}# max-queue-length=5000{%endif%}
+
+#################################
+# max-signature-cache-entries
+#
+{% if powerdns_max_signature_cache_entries is defined %}max-signature-cache-entries={{ powerdns_max_signature_cache_entries }} {% else %}# max-signature-cache-entries={%endif%}
+
+#################################
+# max-tcp-connections
+#
+{% if powerdns_max_tcp_connections is defined %}max-tcp-connections={{ powerdns_max_tcp_connections }} {% else %}# max-tcp-connections=10{%endif%}
+
+#################################
+# module-dir
+#
+{% if powerdns_module_dir is defined %}module-dir={{ powerdns_module_dir }} {% else %}# module-dir=/usr/local/lib/pdns{%endif%}
+
+#################################
+# negquery-cache-ttl
+#
+{% if powerdns_negquery_cache_ttl is defined %}negquery-cache-ttl={{ powerdns_negquery_cache_ttl }} {% else %}# negquery-cache-ttl=60{%endif%}
+
+#################################
+# no-shuffle
+#
+{% if powerdns_no_shuffle is defined %}no-shuffle={{ powerdns_no_shuffle }} {% else %}# no-shuffle=off{%endif%}
+
+#################################
+# only-notify
+#
+{% if powerdns_only_notify is defined %}only-notify={{ powerdns_only_notify }} {% else %}# only-notify=0.0.0.0/0,::/0{%endif%}
+
+#################################
+# out-of-zone-additional-processing
+#
+{% if powerdns_out_of_zone_additional_processing is defined %}out-of-zone-additional-processing={{ powerdns_out_of_zone_additional_processing }} {% else %}# out-of-zone-additional-processing=yes{%endif%}
+
+#################################
+# overload-queue-length
+#
+{% if powerdns_overload_queue_length is defined %}overload-queue-length={{ powerdns_overload_queue_length }} {% else %}# overload-queue-length=0{%endif%}
+
+#################################
+# pipebackend-abi-version
+#
+{% if powerdns_pipebackend_abi_version is defined %}pipebackend-abi-version={{ powerdns_pipebackend_abi_version }} {% else %}# pipebackend-abi-version=1{%endif%}
+
+#################################
+# prevent-self-notification
+#
+{% if powerdns_prevent_self_notification is defined %}prevent-self-notification={{ powerdns_prevent_self_notification }} {% else %}# prevent-self-notification=yes{%endif%}
+
+#################################
+# query-cache-ttl
+#
+{% if powerdns_query_cache_ttl is defined %}query-cache-ttl={{ powerdns_query_cache_ttl }} {% else %}# query-cache-ttl=20{%endif%}
+
+#################################
+# query-local-address
+#
+{% if powerdns_query_local_address is defined %}query-local-address={{ powerdns_query_local_address }} {% else %}# query-local-address=0.0.0.0{%endif%}
+
+#################################
+# query-local-address6
+#
+{% if powerdns_query_local_address6 is defined %}query-local-address6={{ powerdns_query_local_address6 }} {% else %}# query-local-address6=::{%endif%}
+
+#################################
+# query-logging
+#
+{% if powerdns_query_logging is defined %}query-logging={{ powerdns_query_logging }} {% else %}# query-logging=no{%endif%}
+
+#################################
+# queue-limit
+#
+{% if powerdns_queue_limit is defined %}queue-limit={{ powerdns_queue_limit }} {% else %}# queue-limit=1500{%endif%}
+
+#################################
+# receiver-threads
+#
+{% if powerdns_receiver_threads is defined %}receiver-threads={{ powerdns_receiver_threads }} {% else %}# receiver-threads=1{%endif%}
+
+#################################
+# recursive-cache-ttl
+#
+{% if powerdns_recursive_cache_ttl is defined %}recursive-cache-ttl={{ powerdns_recursive_cache_ttl }} {% else %}# recursive-cache-ttl=10{%endif%}
+
+#################################
+# recursor
+#
+{% if powerdns_recursor is defined %}recursor={{ powerdns_recursor }} {% else %}# recursor=no{%endif%}
+
+#################################
+# retrieval-threads
+#
+{% if powerdns_retrieval_threads is defined %}retrieval-threads={{ powerdns_retrieval_threads }} {% else %}# retrieval-threads=2{%endif%}
+
+#################################
+# reuseport
+#
+{% if powerdns_reuseport is defined %}reuseport={{ powerdns_reuseport }} {% else %}# reuseport=no{%endif%}
+
+#################################
+# security-poll-suffix
+#
+{% if powerdns_security_poll_suffix is defined %}security-poll-suffix={{ powerdns_security_poll_suffix }} {% else %}# security-poll-suffix=secpoll.powerdns.com.{%endif%}
+
+#################################
+# send-root-referral
+#
+{% if powerdns_send_root_referral is defined %}send-root-referral={{ powerdns_send_root_referral }} {% else %}# send-root-referral=no{%endif%}
+
+#################################
+# server-id
+#
+{% if powerdns_server_id is defined %}server-id={{ powerdns_server_id }} {% else %}# server-id={%endif%}
+
+#################################
+# setgid
+#
+{% if powerdns_setgid is defined %}setgid={{ powerdns_setgid }} {% else %}# setgid={%endif%}
+
+#################################
+# setuid
+#
+{% if powerdns_setuid is defined %}setuid={{ powerdns_setuid }} {% else %}# setuid={%endif%}
+
+#################################
+# signing-threads
+#
+{% if powerdns_signing_threads is defined %}signing-threads={{ powerdns_signing_threads }} {% else %}# signing-threads=3{%endif%}
+
+#################################
+# slave
+#
+{% if powerdns_slave is defined %}slave={{ powerdns_slave }} {% else %}# slave=no{%endif%}
+
+#################################
+# slave-cycle-interval
+#
+{% if powerdns_slave_cycle_interval is defined %}slave-cycle-interval={{ powerdns_slave_cycle_interval }} {% else %}# slave-cycle-interval=60{%endif%}
+
+#################################
+# slave-renotify
+#
+{% if powerdns_slave_renotify is defined %}slave-renotify={{ powerdns_slave_renotify }} {% else %}# slave-renotify=no{%endif%}
+
+#################################
+# soa-expire-default
+#
+{% if powerdns_soa_expire_default is defined %}soa-expire-default={{ powerdns_soa_expire_default }} {% else %}# soa-expire-default=604800{%endif%}
+
+#################################
+# soa-minimum-ttl
+#
+{% if powerdns_soa_minimum_ttl is defined %}soa-minimum-ttl={{ powerdns_soa_minimum_ttl }} {% else %}# soa-minimum-ttl=3600{%endif%}
+
+#################################
+# soa-refresh-default
+#
+{% if powerdns_soa_refresh_default is defined %}soa-refresh-default={{ powerdns_soa_refresh_default }} {% else %}# soa-refresh-default=10800{%endif%}
+
+#################################
+# soa-retry-default
+#
+{% if powerdns_soa_retry_default is defined %}soa-retry-default={{ powerdns_soa_retry_default }} {% else %}# soa-retry-default=3600{%endif%}
+
+#################################
+# socket-dir
+#
+{% if powerdns_socket_dir is defined %}socket-dir={{ powerdns_socket_dir }} {% else %}# socket-dir=/var/run{%endif%}
+
+#################################
+# tcp-control-address
+#
+{% if powerdns_tcp_control_address is defined %}tcp-control-address={{ powerdns_tcp_control_address }} {% else %}# tcp-control-address={%endif%}
+
+#################################
+# tcp-control-port
+#
+{% if powerdns_tcp_control_port is defined %}tcp-control-port={{ powerdns_tcp_control_port }} {% else %}# tcp-control-port=53000{%endif%}
+
+#################################
+# tcp-control-range
+#
+{% if powerdns_tcp_control_range is defined %}tcp-control-range={{ powerdns_tcp_control_range }} {% else %}# tcp-control-range=127.0.0.0/8, 10.0.0.0/8, 192.168.0.0/16, 172.16.0.0/12, ::1/128, fe80::/10{%endif%}
+
+#################################
+# tcp-control-secret
+#
+{% if powerdns_tcp_control_secret is defined %}tcp-control-secret={{ powerdns_tcp_control_secret }} {% else %}# tcp-control-secret={%endif%}
+
+#################################
+# traceback-handler
+#
+{% if powerdns_traceback_handler is defined %}traceback-handler={{ powerdns_traceback_handler }} {% else %}# traceback-handler=yes{%endif%}
+
+#################################
+# trusted-notification-proxy
+#
+{% if powerdns_trusted_notification_proxy is defined %}trusted-notification-proxy={{ powerdns_trusted_notification_proxy }} {% else %}# trusted-notification-proxy={%endif%}
+
+#################################
+# udp-truncation-threshold
+#
+{% if powerdns_udp_truncation_threshold is defined %}udp-truncation-threshold={{ powerdns_udp_truncation_threshold }} {% else %}# udp-truncation-threshold=1680{%endif%}
+
+#################################
+# version-string
+#
+{% if powerdns_version_string is defined %}version-string={{ powerdns_version_string }} {% else %}# version-string=full{%endif%}
+
+#################################
+# webserver
+#
+{% if powerdns_webserver is defined %}webserver={{ powerdns_webserver }} {% else %}# webserver=no{%endif%}
+
+#################################
+# webserver-address
+#
+{% if powerdns_webserver_address is defined %}webserver-address={{ powerdns_webserver_address }} {% else %}# webserver-address=127.0.0.1{%endif%}
+
+#################################
+# webserver-allow-from
+#
+{% if powerdns_webserver_allow_from is defined %}webserver-allow-from={{ powerdns_webserver_allow_from }} {% else %}# webserver-allow-from=0.0.0.0/0,::/0{%endif%}
+
+#################################
+# webserver-password
+#
+{% if powerdns_webserver_password is defined %}webserver-password={{ powerdns_webserver_password }} {% else %}# webserver-password={%endif%}
+
+#################################
+# webserver-port
+#
+{% if powerdns_webserver_port is defined %}webserver-port={{ powerdns_webserver_port }} {% else %}# webserver-port=8081{%endif%}
+
+#################################
+# webserver-print-arguments
+#
+{% if powerdns_webserver_print_arguments is defined %}webserver-print-arguments={{ powerdns_webserver_print_arguments }} {% else %}# webserver-print-arguments=no{%endif%}
