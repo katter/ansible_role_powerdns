@@ -1,2 +1,6 @@
 ---
 # defaults file for ansible_role_powerdns
+
+
+powerdns_package_url: https://downloads.powerdns.com/releases/deb/
+powerdns_package_name: pdns-static_3.4.6-1_amd64
