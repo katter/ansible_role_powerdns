@@ -1,6 +1,5 @@
 ---
 - name: PowerDNS configuration
   template:
-    src: powernds.conf.j2
-    dest: /etc/powerdns/powerdns.conf
-  
+    src: pdns.conf.j2
+    dest: /etc/powerdns/pdns.conf
