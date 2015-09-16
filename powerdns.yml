@@ -1,0 +1,15 @@
+---
+
+# Note: Please do not change this dummy paybook, it is used as the default playbook when running Vagrant tests.
+# To test your own roles and configurations, please create a playbook specifically for that.
+
+- hosts: all
+  sudo: yes
+  vars_files:
+    - 'defaults/main.yml'
+
+  tasks:
+    - include: 'tasks/main.yml'
+
+  handlers:
+    - include: 'handlers/main.yml'
