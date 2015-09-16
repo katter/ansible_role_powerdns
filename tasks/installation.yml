@@ -1,0 +1,9 @@
+---
+- name: Download powerdns_package
+  get_url:
+    url="{{ powerdns_package_url }}{{ powerdns_package_name }}.deb"
+    dest="/tmp/{{ powerdns_package_name }}.deb"
+
+- name: Install powerdns_package
+  apt: deb="/tmp/{{ powerdns_package_name }}.deb"
+  sudo: true
