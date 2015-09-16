@@ -1,4 +1,11 @@
 ---
 # tasks file for ansible_role_powerdns
+- name: Check if required powerdns package is installed
+  command: dpkg-query -W powerdns_package_name
+  register: powerdns_package_check
+  failed_when: powerdns_package_check.rc > 1
+  changed_when: powerdns_package_check.rc == 1
 
+- include: installation.yml
+  when: powerdns_package_check.rc == 1
 - include: configuration.yml
