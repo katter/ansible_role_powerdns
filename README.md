@@ -1,38 +1,32 @@
-Role Name
-=========
+# PowerDNS
 
-A brief description of the role goes here.
+Role to install and configure PowerDNS (minimal as of yet)
 
-Requirements
-------------
+# Requirements
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
 
-Role Variables
---------------
+## Role Variables
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+The role accepts variables as PowerDNS accepts configurable settings as defined here: https://doc.powerdns.com/md/authoritative/settings/
+Add a leading "powerdns_" and replace dash with underscore.
+Example: To allow recursion from network 192.168.1.0 only you will set the var
+`powerdns_allow_recursion: 192.168.1.0/24` which will set `allow-recursion=192.168.1.0/24` in your powerdns config file.
 
-Dependencies
-------------
+Additional Variables:
+| Var | Description | Required? |
+| --- | ----------- | --------- |
+| `powerdns_package_url`      | the location to fetch the PoweDNS package from | Yes |
+| `powerdns_package_name`        | the name of the file to fetch for install | Yes |
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
 
-Example Playbook
-----------------
+## Example Playbook
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+```
+---
+- hosts: all
+  roles:
+    - role: powerdns
+      powerdns_carbon_server: 192.168.1.45
+      powerdns_log_dns_queries: yes
 
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
-
-License
--------
-
-BSD
-
-Author Information
-------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+```
